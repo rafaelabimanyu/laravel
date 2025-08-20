@@ -7,13 +7,20 @@ Route::get('/', function () {
 });
 
 Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/siswa', function () {
-    return view('siswa.index');
+    // $nama = 'Rafael Abimanyu';
+    $data = 'Rafael Abimanyu';
+    $umur = 17;
+    return view('about', ['data' => $data, 'umur' => 17 ]);
+    // return view('about', compact('data'))->with('umur', 17);
+    // return view('about')
+    //     ->with('data', "ABI")
+    //     ->with('umur', 17);
 });
 
 Route::get('/contact', function () {
     return view('contact');
+});
+
+Route::get('/siswa', function () {
+    return view('siswa.index');
 });

@@ -7,6 +7,7 @@
     <title>about page</title>
 </head>
 <body>
-    <h1>helo from about page</h1>
+    <h1>helo from about page, im {{ $data }}</h1>
+    <h1>age : {{ $umur }}</h1>
 </body>
 </html>
