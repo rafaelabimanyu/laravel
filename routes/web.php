@@ -24,3 +24,8 @@ Route::get('/contact', function () {
 Route::get('/siswa', function () {
     return view('siswa.index');
 });
+
+Route::get('/siswa/{id}', function ($id) {
+    // dd($id);
+    return view('siswa.show', ['id' => $id]);
+});
